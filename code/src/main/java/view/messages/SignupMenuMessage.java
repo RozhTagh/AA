@@ -1,0 +1,13 @@
+package view.messages;
+
+public enum SignupMenuMessage {
+    INVALID_USERNAME,
+    INVALID_PASSWORD,
+    WEAK_PASSWORD,
+    USERNAME_EXISTS,
+    VALID_USERNAME,
+    VALID_PASSWORD,
+    USERNAME_NOT_EXIST,
+    INCORRECT_PASSWORD,
+    LOGIN_SUCCESSFUL,
+}

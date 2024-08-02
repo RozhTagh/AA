@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.ChangeAvatar"
+      prefHeight="400.0" prefWidth="600.0"
+      alignment="CENTER" spacing="40">
+
+    <VBox alignment="TOP_CENTER">
+        <HBox alignment="CENTER">
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar1" onMouseClicked="#choose1"/>
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar2" onMouseClicked="#choose2"/>
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar3" onMouseClicked="#choose3"/>
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar4" onMouseClicked="#choose4"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar5" onMouseClicked="#choose5"/>
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar6" onMouseClicked="#choose6"/>
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar7" onMouseClicked="#choose7"/>
+            <Circle fill="lightsteelblue" radius="60" fx:id="avatar8" onMouseClicked="#choose8"/>
+        </HBox>
+    </VBox>
+
+    <Button text="browse file" onMouseClicked="#browse"/>
+
+</VBox>

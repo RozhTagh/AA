@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.MainMenu"
+      prefHeight="400.0" prefWidth="600.0"
+      alignment="CENTER" spacing="15">
+    <Circle radius="40" fx:id="avatarPhoto"/>
+    <Button text="Profile Menu" maxWidth="240" onMouseClicked="#profileMenu"/>
+    <Button text="Start New Game" maxWidth="240" onMouseClicked="#newGame"/>
+    <Button text="Continue Previous Game" maxWidth="240" onMouseClicked="#continueGame"/>
+    <Button text="Start two player Game" maxWidth="240" onMouseClicked="#twoPlayer"/>
+    <Button text="Score Board" maxWidth="240" onMouseClicked="#scoreboard"/>
+    <Button text="Settings" maxWidth="240" onMouseClicked="#settings"/>
+    <Button text="exit" maxWidth="240" onMouseClicked="#exit"/>
+</VBox>

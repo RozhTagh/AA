@@ -1,0 +1,10 @@
+package view.messages;
+
+public enum ProfileMenuMessages {
+    INVALID_USERNAME,
+    USERNAME_EXISTS,
+    USERNAME_CHANGE_SUCCESSFUL,
+    INVALID_PASSWORD,
+    WEAK_PASSWORD,
+    PASSWORD_CHANGE_SUCCESSFUL,
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Circle?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.Settings"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <Button text="back" onMouseClicked="#back" translateX="10" translateY="10"/>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="50">
+            <VBox alignment="CENTER" spacing="10">
+                <HBox alignment="CENTER" spacing="70">
+                    <fx:define>
+                        <ToggleGroup fx:id="tg"/>
+                    </fx:define>
+                    <RadioButton text="level 1" fx:id="level1" toggleGroup="$tg" onAction="#level1"/>
+                    <RadioButton text="level 2" fx:id="level2" toggleGroup="$tg" onAction="#level2"/>
+                    <RadioButton text="level 3" fx:id="level3" toggleGroup="$tg" onAction="#level3"/>
+                </HBox>
+                <HBox alignment="CENTER" spacing="30">
+                    <Text text="rotation speed : 5"/>
+                    <Text text="rotation speed : 10"/>
+                    <Text text="rotation speed : 15"/>
+                </HBox>
+                <HBox alignment="CENTER" spacing="40">
+                    <Text text="wind speed : 1.2"/>
+                    <Text text="wind speed : 1.5"/>
+                    <Text text="wind speed : 1.8"/>
+                </HBox>
+                <HBox alignment="CENTER" spacing="55">
+                    <Text text="icing time : 7"/>
+                    <Text text="icing time : 5"/>
+                    <Text text="icing time : 3"/>
+                </HBox>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="20">
+                <Slider min="10" max="25" value="15" blockIncrement="1" maxWidth="240" fx:id="ballNumber"/>
+                <Text fx:id="sliderNumber"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="20">
+                <HBox alignment="CENTER" spacing="70">
+                    <fx:define>
+                        <ToggleGroup fx:id="tg2"/>
+                    </fx:define>
+                    <RadioButton text="map 1" fx:id="mapButton1" toggleGroup="$tg2" onAction="#map1"/>
+                    <RadioButton text="map 2" fx:id="mapButton2" toggleGroup="$tg2" onAction="#map2"/>
+                    <RadioButton text="map 3" fx:id="mapButton3" toggleGroup="$tg2" onAction="#map3"/>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10">
+                    <Circle radius="60" fx:id="map1"/>
+                    <Circle radius="60" fx:id="map2"/>
+                    <Circle radius="60" fx:id="map3"/>
+                </HBox>
+            </VBox>
+            <HBox alignment="CENTER" spacing="10">
+                <CheckBox text="mute" fx:id="mute" onAction="#mute"/>
+                <CheckBox text="black and white" fx:id="BW" onAction="#BW"/>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15">
+                <ComboBox fx:id="onePlayer" onAction="#setOnePlayer"/>
+                <ComboBox fx:id="twoPlayer" onAction="#setTwoPlayer"/>
+                <ComboBox fx:id="ice" onAction="#ice"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

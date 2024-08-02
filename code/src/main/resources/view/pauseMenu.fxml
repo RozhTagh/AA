@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.GameMenu"
+            prefHeight="450.0" prefWidth="600.0"
+            alignment="CENTER" spacing="10">
+        <Button text="resume game"/>
+        <Button text="save game" fx:id="saveGame" onMouseClicked="#saveGame"/>
+        <Button text="restart game" fx:id="restartGame" onMouseClicked="#restartGame"/>
+        <Button text="exit game" fx:id="exitGame" onMouseClicked="#exitGame"/>
+        <Button text="change music"/>
+        <Button fx:id="stopMusic" onMouseClicked="#stopMusic"/>
+        <Button text="show control keys" onMouseClicked="#showKeys"/>
+</VBox>

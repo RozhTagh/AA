@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.LoginMenuController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <Label text="welcome to login menu!"/>
+            <VBox alignment="CENTER" spacing="7">
+                <TextField promptText="username" maxWidth="240" fx:id="username"/>
+                <Text fx:id="usernameDetails"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="7">
+                <PasswordField promptText="password" maxWidth="240" fx:id="password"/>
+                <Text fx:id="passwordDetails"/>
+            </VBox>
+            <Text text="don't have an account? click HERE" underline="true" onMouseClicked="#signupMenu"/>
+            <HBox alignment="CENTER" spacing="10">
+                <Button text="submit" onMouseClicked="#submit"/>
+                <Button text="reset" onMouseClicked="#reset"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>
